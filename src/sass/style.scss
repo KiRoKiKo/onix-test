@@ -1,0 +1,19 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import 'blocks/hub-page';
+@import 'blocks/btn';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/activity';
+@import 'blocks/searchpanel';
+@import 'blocks/profile';
+@import 'blocks/tasks';
+@import 'blocks/menu';

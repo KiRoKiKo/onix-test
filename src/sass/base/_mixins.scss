@@ -1,0 +1,13 @@
+@mixin before_circle {
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background: url('../icons/check-solid.svg') center center / 15px 10px no-repeat;
+        background-color: #CDF9C4;
+    }
+}

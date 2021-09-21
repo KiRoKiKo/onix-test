@@ -1,0 +1,21 @@
+.btn {
+    border-radius: 15px;
+    font-family: Helvetica;
+    font-size: 14px;
+    border: none;
+    padding: 5px 15px;
+    &_gray {
+        background: #EAEAEA;
+        color: #131313;
+        margin-right: 15px;
+    }
+    &_yellow {
+        display: flex;
+        align-items: center;
+        background: #FFF8DD;
+        color: #FFC200;
+        img {
+            margin-right: 6px;
+        }
+    }
+}

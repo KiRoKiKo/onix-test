@@ -1,0 +1,35 @@
+.searchpanel {
+    padding: 30px 20px 30px 30px;
+    display: flex;
+    align-items: center;
+    min-height: 84px;
+    &__hamburger {
+        display: flex;
+        align-items: center;
+        margin-right: 13px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__descr {
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 24px;
+        margin-right: 82px;
+    }
+    &__icon {
+        display: flex;
+        height: 16px;
+        width: 16px;
+        color: rgb(135, 135, 135);
+        cursor: pointer;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

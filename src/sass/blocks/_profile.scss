@@ -1,0 +1,49 @@
+.profile {
+    padding: 16px 20px 16px 30px;
+    display: flex;
+    align-items: center;
+    background: #202020;
+    min-height: 80px;
+    &__avatar {
+        margin-right: 13px;
+        width: 48px;
+        height: 48px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: calc(100% - 63px - 16px);
+    }
+    &__name {
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    &__status {
+        font-size: 12px;
+        color: #9B9B9B;
+    }
+    &__meatball {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        span {
+            background: #D8D8D8;
+            width: 4px;
+            height: 4px;
+            border-radius: 100%;
+            margin-right: 2px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

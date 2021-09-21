@@ -1,0 +1,20 @@
+.tasks {
+    padding: 20px 20px 0 30px;
+    &__wrapper {
+        display: flex;
+    }
+    &__completed {
+        width: 50%;
+    }
+    &__amount {
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    &__descr {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    &__open {
+        width: 50%;
+    }
+}

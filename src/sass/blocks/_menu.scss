@@ -1,0 +1,40 @@
+.menu {
+    padding: 31px 20px 35px 30px;
+    &__items {
+        list-style-type: none;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        position: relative;
+        z-index: 1;
+        &:last-child {
+            &::before {
+                content: '3';
+                font-size: 13px;
+                color: #131313;
+                position: absolute;
+                top: 0;
+                right: 50%;
+                z-index: -1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #FFC200;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+            }
+        }
+    }
+    &__link {
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 22px;
+        &:hover {
+            color: #878787;
+            text-decoration: none;
+        }
+    }
+}
