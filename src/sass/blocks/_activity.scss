@@ -1,14 +1,15 @@
 .activity {
     background-color: #EEEBE4;
     width: 100%;
-    height: calc(100% - 132px);
+    min-height: calc(100% - 132px);
     display: flex;
     justify-content: center;
     &__wrapper {
         margin-top: 30px;
+        margin-bottom: 120px;
         padding: 35px 20px 97px 30px ;
         width: 730px;
-        height: 591px;
+        min-height: 591px;
         background: #FFFFFF;
         border-radius: 8px;
     }
