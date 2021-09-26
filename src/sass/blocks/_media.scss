@@ -1,0 +1,294 @@
+@media(max-width: 1200px) {
+    .header {
+        &__title {
+            font-size: 26px;
+        }
+    }
+    .activity {
+        &__wrapper {
+            width: 80%;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .btn {
+        font-size: 13px;
+        padding: 3px 13px;
+        &_gray {
+            margin-right: 8px;
+        }
+    }
+    .hub-page {
+        &__sidebar {
+            min-width: 230px;
+        }
+    }
+    .profile {
+        &__avatar {
+            width: 40px;
+            height: 40px;
+        }
+        &__wrapper {
+            width: calc(100% - 53px - 16px);
+        }
+    }
+    .menu {
+        &__link {
+            transition: all 0.3s;
+            &:hover {
+                color: #FFFFFF;
+            }
+            &:active {
+                color: #878787;
+            }
+        }
+    }
+    .header {
+        padding: 30px 20px 12px 20px;
+        min-height: 121px;
+        &__logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        &__title {
+            font-size: 17px;
+            margin-right: 9px;
+        }
+        &__meatball {
+            width: 27px;
+            height: 27px;
+            &:hover {
+                background: #EAEAEA;
+                span {
+                    background: #D8D8D8;
+                }
+            }
+            &:active {
+                background: #878787;
+                span {
+                    background: #fff;
+                }
+            }
+        }
+        &__avatar {
+            a {
+                width: 27px;
+                height:27px;
+                &:last-child {
+                    margin-right: 9px;
+                }
+            }
+        }
+    }
+    .nav {
+        margin-top: 15px;
+    }
+    .activity {
+        min-height: calc(100% - 121px);
+        &__wrapper {
+            padding-bottom: 25px;
+        }
+        &__time {
+            font-size: 13px;
+        }
+        &__descr {
+            width: 75%;
+            font-size: 15px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .btn {
+        &_yellow {
+            margin-right: 8px;
+        }
+    }
+    .hub-page {
+        &__sidebar {
+            position: fixed;
+            z-index: 10;
+            width: 350px;
+            top: 0;
+            left: -100%;
+            opacity: 0;
+            transition: all .6s;
+            visibility: hidden;
+            &.active-sidebar {
+                left: 0;
+                visibility: visible;
+                opacity: 1;
+            }
+            &-blocks {
+                background-color: #000;
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                transition: all .6s;
+                z-index: 10;
+            }
+            &-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                opacity: 0.75;
+            }
+        }
+    }
+    .searchpanel {
+        padding: 30px 30px 30px 40px;
+        &__search {
+            margin-right: 20px;
+            height: 20px;
+            width: 20px;
+        }
+        &__close {
+            display: flex;
+            height: 18px;
+            width: 18px;
+        }
+    }
+    .profile {
+        padding: 16px 30px 16px 40px;
+    }
+    .tasks {
+        padding: 20px 30px 0 40px;
+    }
+    .menu {
+        padding: 31px 30px 35px 40px;
+    }
+    .header {
+        &__hamburger {
+            display: flex;
+        }
+        &__title {
+            font-size: 19px;
+        }
+    }
+    .btn {
+        &_gray {
+            margin-right: 10px;
+        }
+        &_yellow {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .hub-page {
+        &__sidebar {
+            width: 270px;
+        }
+    }
+    .btn {
+        font-size: 15px;
+        padding: 5px 15px;
+        &_gray {
+            margin-right: 0;
+        }
+        &_yellow {
+            margin-right: 0;
+        }
+    }
+    .header {
+        padding: 25px 15px 12px 15px;
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 0;
+        }
+        &__title {
+            font-size: 22px;
+            margin-right: 0;
+        }
+        &__items {
+            flex-basis: 350px;
+            justify-content: space-between;
+        }
+        &__meatball {
+            width: 30px;
+            height: 30px;
+        }
+        &__navbar {
+            flex-basis: 350px;
+            justify-content: space-around;
+            padding-top: 0;
+            margin-top: 10px;
+        }
+        &__avatar {
+            display: none;
+        }
+        &__hamburger {
+            height: 16px;
+            span {
+                width: 24px;
+            }
+        }
+    }
+    .nav {
+        &__menu {
+            justify-content: center;
+            width: 100%
+        }
+        &__item {
+            margin-right: 15px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &__link.active {
+            &::before {
+                bottom: -12px;
+            }
+        }
+    }
+    .activity {
+        &__wrapper {
+            width: 90%;
+        }
+        &__notifications {
+            margin-top: 25px;
+        }
+        &__descr {
+            padding-left: 45px;
+            width: 75%;
+            &::before {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &__time {
+            font-size: 12px;
+            width: 43px;
+        }
+        &__text {
+            margin: 20px 0 0 0;
+        }
+        &__photo {
+            margin: 20px auto 0 auto;
+            justify-content: space-between;
+        }
+        &__img {
+            width: 90px;
+            height: 90px;
+            margin-left: 10px;
+            margin-right: 10px;
+            &:nth-child(4n) {
+                margin-right: 10px;
+            }
+        }
+    }
+}

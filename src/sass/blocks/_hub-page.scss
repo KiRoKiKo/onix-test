@@ -2,8 +2,9 @@
     display: flex;
     &__sidebar {
         min-height: 100vh;
-        width: 270px;
+        min-width: 270px;
         background-color: #000;
+
     }
     &__content {
         min-height: 100vh;

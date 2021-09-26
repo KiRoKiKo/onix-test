@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @import 'blocks/hub-page';
@@ -17,3 +18,5 @@
 @import 'blocks/profile';
 @import 'blocks/tasks';
 @import 'blocks/menu';
+
+@import 'blocks/media';

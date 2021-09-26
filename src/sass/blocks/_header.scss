@@ -1,5 +1,6 @@
 .header {
-    padding: 35px 30px 0 30px;
+    padding: 40px 30px 12px 30px;
+    min-height: 136px;
     background-color: #fff;
     &__wrapper {
         display: flex;
@@ -44,12 +45,20 @@
         width: 30px;
         height: 30px;
         cursor: pointer;
+        transition: all 0.6s;
+        &:hover {
+            background: #878787;
+            span {
+                background: #fff;
+            }
+        }
         span {
             background: #D8D8D8;
             width: 4px;
             height: 4px;
             border-radius: 100%;
             margin-right: 2px;
+            transition: all 0.6s;
             &:last-child {
                 margin-right: 0;
             }
@@ -76,5 +85,19 @@
             object-fit: cover;
             border-radius: 100%;
         }        
+    }
+    &__hamburger {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 14px;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: #878787;
+        }
     }
 }
