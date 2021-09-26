@@ -30,7 +30,21 @@
             height: 40px;
         }
         &__wrapper {
-            width: calc(100% - 53px - 16px);
+            width: calc(100% - 53px - 30px);
+        }
+        &__meatball {
+            &:hover {
+                background: #202020;
+                span {
+                    background: #D8D8D8;
+                }
+            }
+            &:active {
+                background: rgba(255,255,255,.5);
+                span {
+                    background: #fff;
+                }
+            }
         }
     }
     .menu {
