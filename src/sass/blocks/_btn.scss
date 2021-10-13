@@ -10,12 +10,19 @@
         margin-right: 15px;
     }
     &_yellow {
+        padding-left: 36px;
         display: flex;
+        position: relative;
         align-items: center;
         background: #FFF8DD;
         color: #FFC200;
-        img {
-            margin-right: 5px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 15px;
+            background: url('../icons/chat_btn.svg') center center / 100% 100% no-repeat;
         }
     }
 }

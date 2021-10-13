@@ -18,6 +18,9 @@
         &_gray {
             margin-right: 8px;
         }
+        &_yellow {
+            padding-left: 34px;
+        }
     }
     .hub-page {
         &__sidebar {
@@ -211,6 +214,7 @@
         }
         &_yellow {
             margin-right: 0;
+            padding-left: 36px;
         }
     }
     .header {
@@ -282,6 +286,8 @@
             &::before {
                 width: 30px;
                 height: 30px;
+                background: url(../icons/check-solid.svg) center center/13px 9px no-repeat;
+                background-color: #cdf9c4;
             }
             &_circle {
                 &-message {
